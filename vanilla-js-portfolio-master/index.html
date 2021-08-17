@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">.
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./static/css/main.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/page.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="title" property="og:title" content="CIBC Landing Page" />
+  <meta name="description"property="og:description"  content="CIBC Landing Page" />
+  <meta name="image" property="og:image" content="" />
+  <meta property="og:type" content="Website" />
+
+
+  <title> CIBC Risk Team </title>
+</head>
+
+<body>
+
+  <header>
+    <div class="fixed-header animate-background">
+      <div class="container header-container">
+        <div class="logo-container">
+          <span class="logo animate-logo">CIBC</span>
+        </div>
+        <div class="header-text">
+          <h1 class="serif">
+            <p class="animate-text-1"> Risk Team</p>
+            <p class="animate-text-2"> Global Operational Risk Management </p>
+          </h1>
+        </div>
+        <h2 class="animate-subtitle">
+          Preview our projects below
+        </h2>
+        <div class="scroll-button animate-scroll" tabindex="0">
+          <div class="arrow">↓</div> scroll
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="visible">
+    <div class="container">
+    <a href="index.html" class="nav-logo serif" title="Back to homepage">
+      CIBC
+    </a>
+    <div class="nav-links">
+
+      <a href="about.html" class="link">about</a>
+      <a href="projects.html" class="link">projects</a>
+      <a href="insights.html" class="link">insights</a>
+      <a href="index.html#contact" class="link">contact</a>
+    </div>
+
+
+    <div class="nav-controls">
+      <button id="menu-display" title="Show Menu" class="hamburger">
+
+      </button>
+      <button id="theme-display" title="Select a color scheme" class="control">
+        <i class="fa fa-cog" title="Theme Select"></i>
+      </button>
+    </div>
+
+    <div class="theme-container">
+      <button class="light theme-select" id="light-select" onclick="setTheme('light')" aria-label="Set light theme">
+        <div class="theme-label">
+          Light
+        </div>
+        <div class="theme">
+          <div class="color background"></div>
+          <div class="color shade-100"></div>
+          <div class="color shade-300"></div>
+          <div class="color shade-500"></div>
+          <div class="color text"></div>
+        </div>
+      </button>
+
+      <button class="dark theme-select" id="dark-select" onclick="setTheme('dark')"
+        onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
+        <div class="theme-label">
+          Dark
+        </div>
+        <div class="theme">
+          <div class="color background"></div>
+          <div class="color shade-100"></div>
+          <div class="color shade-300"></div>
+          <div class="color shade-500"></div>
+          <div class="color text"></div>
+        </div>
+      </button>
+
+      <button class="brown theme-select" id="brown-select" onclick="setTheme('brown')" aria-label="Set brown theme">
+        <div class="theme-label">
+          Brown
+        </div>
+        <div class="light theme">
+          <div class="color background"></div>
+          <div class="color shade-100"></div>
+          <div class="color shade-300"></div>
+          <div class="color shade-500"></div>
+          <div class="color text"></div>
+        </div>
+      </button>
+
+      <button class="green theme-select" id="green-select" onclick="setTheme('green')" aria-label="Set green theme">
+        <div class="theme-label">
+          Green
+        </div>
+        <div class="light theme">
+          <div class="color background"></div>
+          <div class="color shade-100"></div>
+          <div class="color shade-300"></div>
+          <div class="color shade-500"></div>
+          <div class="color text"></div>
+        </div>
+      </button>
+
+      <button class="pink theme-select" id="pink-select" onclick="setTheme('pink')" aria-label="Set pink theme">
+        <div class="theme-label">
+          Red
+        </div>
+        <div class="light theme">
+          <div class="color background"></div>
+          <div class="color shade-100"></div>
+          <div class="color shade-300"></div>
+          <div class="color shade-500"></div>
+          <div class="color text"></div>
+        </div>
+      </button>
+
+    </div>
+    </div>
+  </nav>
+  <main>
+
+    <section id="about">
+      <div class="container inner-container">
+        <div class="intro scroll-in">
+          <h2 class="section-title">Welcome to our Risk Team Page</h2>
+          <div class="section-subtitle">
+            <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat."</p>
+          </div>
+          <div class="section-link scroll-in">
+            <a href="about.html" class="link-btn">More About Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wave-border top">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: var(--shade-100)"></path>
+      </svg>
+    </div>
+
+    <section id="projects">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Featured Projects <span class="title-icon">&#128187;</span></h2>
+          <p class="section-subtitle">
+            Here are our team projects below:
+          </p>
+        </div>
+        <div class="project-container">
+
+          <div class="project scroll-in">
+            <div class="project-image">
+              <a>
+                <img src="./static/images/projects/coffee.jpg" alt="Advanced Media Search Website">
+              </a>
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  <a>
+                    CIRA Form
+                  </a>
+                </h3>
+                <div class="project-description">
+                  <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  </p>
+
+                </div>
+                <ul class="project-tags" title="Technologies used">
+                  <li class="tag">React</li>
+                  <li class="tag">JavaScript</li>
+                  <li class="tag">HTML/CSS</li>
+                </ul>
+                <div class="project-links">
+                  <a href="" class="link-btn">Visit Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="./static/images/projects/port2.jpg" alt="Portfolio Website">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  <a>
+                    Risk Assessment Tool
+                  </a>
+                </h3>
+                <div class="project-description">
+                  <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+                <ul class="project-tags">
+                  <li class="tag">React</li>
+                  <li class="tag">JavaScript</li>
+                  <li class="tag">HTML/CSS</li>
+                </ul>
+                <div class="project-links">
+                  <a href="" class="link-btn">Visit Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="./static/images/projects/bulb.jpg" alt="Portfolio Website">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  <a> Project 3 </a>
+                </h3>
+                <div class="project-description">
+                  <p> ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                </div>
+                <ul class="project-tags">
+                  <li class="tag">Ruby</li>
+                  <li class="tag">Rails</li>
+                  <li class="tag">HTML/CSS</li>
+                </ul>
+                <div class="project-links">
+                  <a href="" class="link-btn">Visit Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="section-link scroll-in">
+          <a href="work.html" class="link-btn">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="wave-border bottom">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+          style="stroke: none; fill: var(--shade-100);"></path>
+      </svg>
+    </div>
+
+    <section id="articles">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Our Insights <span class="title-icon">&#128466;</span></h2>
+          <p class="section-subtitle">
+            We are a team of developers that create data visualization solutions for CIBC
+          </p>
+        </div>
+        <div class="articles-container">
+          <div class="article scroll-in">
+            <div class="article-image">
+              <img src="./static/images/articles/team.jpg"
+                alt="Picking the right coding language in 2021">
+            </div>
+            <div class="article-content">
+              <div class="article-site">
+          
+              </div>
+              <h3 class="article-title">
+                <a href="">
+                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                </a>
+              </h3>
+              <div class="article-description">
+                <p>
+                  Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-link scroll-in">
+          <a href="insights.html" class="link-btn">View all Insights</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="wave-border top">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: var(--shade-100)"></path>
+      </svg>
+    </div>
+
+    <section id="contact">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Contact<span class="title-icon">&#128231;</span></h2>
+          <p class="section-subtitle">
+            Leave a message below to contact our team.
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="form-container scroll-in">
+            <p class="success-message"></p>
+            <form name="contact" method="POST" data-netlify="true" action="/?success#contact">
+              <div class="input-container">
+                <input type="text" id="name" name="name" required class="form-input" />
+                <label for="name">Name:</label>
+              </div>
+              <div class="input-container">
+                <input type="email" id="email" name="email" required class="form-input" />
+                <label for="email">Email:</label>
+              </div>
+              <div class="input-container">
+                <textarea required maxlength="1000" id="message" name="message" class="form-input"></textarea>
+                <label for="message">Message:<br> </label>
+                <small>
+                  <span id="message-count">1000</span> characters
+                </small>
+              </div>
+              <div>
+                <button type="submit" class="link-btn">Send</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="wave-border bottom">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+          style="stroke: none; fill: var(--shade-100);"></path>
+      </svg>
+    </div>
+  
+  </main>
+
+  <footer class="container">
+    <div class="social-media">
+      <a href="" title="Github">
+        <i class="fa fa-github"></i>
+      </a>
+      <a href="" title="twitter">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="" title="LinkedIn">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </div>
+    <div class="copyright">
+      Designed & Built By CIBC Risk Team
+    </div>
+  </footer>
+</body>
+
+<script src="./static/js/index.js"></script>
+<script src="./static//js/landing-page.js"></script>
+
+</html>

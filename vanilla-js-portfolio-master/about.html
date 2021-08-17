@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/css/main.css">
+  <link rel="stylesheet" href="/static/css/about.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>CIBC: About Us</title>
+</head>
+
+<body>
+  <nav class="visible">
+    <div class="container">
+    <a href="index.html" class="nav-logo" title="Back to HomePage">CIBC</a>
+    <div class="nav-links">
+      <a href="about.html" class="link">about</a>
+      <a href="projects.html" class="link">projects</a>
+      <a href="insights.html" class="link">insights</a>
+      <a href="index.html#contact" class="link">contact</a>
+    </div>
+
+    <div class="nav-controls">
+        <button id="menu-display" title="Show Menu" class="hamburger">
+
+        </button>
+        <button id="theme-display" class="control">
+          <i class="fa fa-cog" title="Theme Select"></i>
+        </button>
+      </div>
+
+    <div class="theme-container">
+        <button class="light theme-select" id="light-select" onclick="setTheme('light')" aria-label="Set light theme">
+          <div class="theme-label">
+            Light
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="dark theme-select" id="dark-select" onclick="setTheme('dark')"
+          onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
+          <div class="theme-label">
+            Dark
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="brown theme-select" id="brown-select" onclick="setTheme('brown')" aria-label="Set brown theme">
+          <div class="theme-label">
+            Brown
+          </div>
+          <div class="light theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="green theme-select" id="green-select" onclick="setTheme('green')" aria-label="Set green theme">
+          <div class="theme-label">
+            Green
+          </div>
+          <div class="light theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="pink theme-select" id="pink-select" onclick="setTheme('pink')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Pink
+          </div>
+          <div class="light theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="about" class="container">
+      <div class="intro-container">
+        <div class="intro-image">
+          <img src="./static/images/about/ourteam.jpg" alt="">
+        </div>
+        <div class="intro">
+          <p class="large-text">Hello, Welcome to our Team Page </p>
+          <p class="bold-text"> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="history" class="container inner-container">
+      <details>
+        <summary>
+          <h3 class="subsection-title">
+            Dropdown 1
+          </h3>
+        </summary>
+        <div class="main-text">
+          <p>
+            Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.
+          </p>
+        </div>
+      </details>
+    </section>
+
+    <section id="experience" class="container inner-container">
+      <details>
+        <summary>
+          <h3 class="subsection-title">
+            Dropdown 2
+          </h3>
+        </summary>
+        <div class="main-text">
+          <div class="text">
+
+            <li>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</li>
+          </div>
+
+          <div class="text">
+
+            <li> Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+            </li>
+            <li> Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+            </li>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    
+  </main>
+
+  <footer class="container">
+    <div class="social-media">
+      <a href="" title="Github">
+        <i class="fa fa-github"></i>
+      </a>
+      <a href="" title="twitter">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="" title="LinkedIn">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </div>
+    <div class="copyright">
+      Designed & Built By CIBC Risk Team
+    </div>
+  </footer>
+
+</body>
+
+<script src="static/js/index.js"></script>
+<script src="static/js/about.js"></script>
+
+</html>
